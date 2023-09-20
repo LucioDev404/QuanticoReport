@@ -164,7 +164,7 @@ if ($_SESSION['permesso'] != "w" && $_SESSION['permesso'] != "a") {
                         <?php
 
                         if ($_SESSION['permesso'] == "w") {
-                            $query    = "SELECT * FROM `Users` WHERE `reparto` = '" . $_SESSION['reparto'] . "' ORDER BY `id` DESC";
+                            $query    = "SELECT * FROM `Users` WHERE `reparto` = '" . $_SESSION['reparto'] . "' and permesso != 'w' ORDER BY `id` DESC";
 
                             $result = mysqli_query($con, $query) or die();
 
