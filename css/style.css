@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/sfondo.jpg');
+    background-repeat: repeat;
+}
+
+.box {
+    padding: 20px 20px 20px 20px;
+    background: #fff;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+/*
+    bottone allungato al 100% e responsive
+*/
+.btn-all {
+    width: 100%;
+}
+
+/*HERO*/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/*gestione scrolling interno a un div per la visualizzazione dei report*/
+.container-report {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+/*responsive chart*/
+.chart {
+    width: 100%;
+    min-height: 450px;
+}
+
+.box-rep {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 10px 10px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
